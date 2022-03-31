@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Time
+comment1.params=nome\ quantMundiais\ corPrincipal\ estadioProprio\ orcamento
+comment1.target=Time(java.lang.String,\ int,\ java.lang.String,\ boolean,\ double)
+comment10.params=estadioProprio
+comment10.target=void\ setEstadioProprio(boolean)
+comment11.params=orcamento
+comment11.target=void\ setOrcamento(double)
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=
+comment3.target=int\ getquantMundiais()
+comment4.params=
+comment4.target=java.lang.String\ getCorPrincipal()
+comment5.params=
+comment5.target=boolean\ isEstadioProprio()
+comment6.params=
+comment6.target=double\ getOrcamento()
+comment7.params=nome
+comment7.target=void\ setNome(java.lang.String)
+comment8.params=quantMundiais
+comment8.target=void\ setQuantMundiais(int)
+comment9.params=corPrincipal
+comment9.target=void\ setCorPrincipal(java.lang.String)
+numComments=12
