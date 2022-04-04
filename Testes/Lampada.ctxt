@@ -1,3 +1,9 @@
 #BlueJ class context
 comment0.target=Lampada
-numComments=1
+comment1.params=onOff
+comment1.target=Lampada(boolean)
+comment2.params=
+comment2.target=boolean\ getOnOff()
+comment3.params=onOff
+comment3.target=void\ setOnOff(boolean)
+numComments=4
