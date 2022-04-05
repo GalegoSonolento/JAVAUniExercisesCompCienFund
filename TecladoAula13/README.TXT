@@ -17,11 +17,11 @@ ANOTAÇÕES:
 as aulas acontecem
 
 -> SOBRECARGA
-- Vários métodos que fazem a mesma coisa e são iguais, mas que recebem parâmetros 
-diferentes 
+    - Vários métodos que fazem a mesma coisa e são iguais, mas que recebem parâmetros 
+    diferentes 
 
 -> ToString
-- Representação de forma String da posição de memória em que o objeto se encontra
-- Existe uma classe mãe de todas, a "object", nela existe um método chamado ToString -> representa o objeto na forma de String
-- O padrão é mostrar a posição de momória
-- Dá pra trocar o que o ToString mostra quando chamado
+    - Representação de forma String da posição de memória em que o objeto se encontra
+    - Existe uma classe mãe de todas, a "object", nela existe um método chamado ToString -> representa o objeto na forma de String
+    - O padrão é mostrar a posição de momória
+    - Dá pra trocar o que o ToString mostra quando chamado
