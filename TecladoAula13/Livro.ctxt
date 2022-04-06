@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Livro
+comment1.params=titulo\ anoPublicacao\ valor\ quantPaginas
+comment1.target=Livro(java.lang.String,\ int,\ double,\ int)
+comment2.params=
+comment2.target=void\ calcularPrecoPorPagina()
+comment3.params=
+comment3.target=void\ imprimeInfo()
+numComments=4
