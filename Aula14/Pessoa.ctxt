@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Pessoa
+comment1.params=nome\ sexo\ idade\ altura\ quantIrmao\ adress
+comment1.target=Pessoa(java.lang.String,\ char,\ int,\ double,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ imprimeInformacoes()
+comment3.params=
+comment3.target=boolean\ isFilhoUnico()
+comment4.params=
+comment4.target=java.lang.String\ filhoUnico()
+numComments=5
