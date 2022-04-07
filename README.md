@@ -220,14 +220,14 @@ as aulas acontecem
     - Dá pra trocar o que o ToString mostra quando chamado
  
 -> if/else
-    - Aqui o sistema é bem simples, bem dizer que pouca coisa é diferente desses métodos 
+- Aqui o sistema é bem simples, bem dizer que pouca coisa é diferente desses métodos 
 
 -> Associação de classe 
-    - Veja, quando eu crio uma classe, eu também crio um tipo novo
-    - Ou seja, além dos primitivos, se eu criei a classe livro, agora eu tbm tenho o tipo livro 
-    - Dessa forma, eu agora posso colocar uma variável do tipo livro dentro de outra classe, então assim eu conseguirei associar essas duas classes perfeitamente 
-    - Mas vale dar a devida atenção que, quando eu crio uma variável, eu preciso declarar ela dentro do meu construtor e se, por exemplo, já existir um objeto livro, eu coloco apenas a referência a esse tal objeto dentro do objeto cliente, por exemplo
-    - Claro que eu posso criar um objeto livro no espaço destinado ao livro dentro do meu objeto de cliente, só que a referência vai ficar lá dentro do objeto cliente, não fora, ou seja, muito provavelmente será privada. 
-    - Pra acessar o objeto livro e fazer alguma alteração, se ele estiver fora de outro objeto é simples, da forma comum, mas, caso ele esteja dentro de outro objeto cliente, eu preciso, para alterar o número de páginas, por exemplo:
-      cliente2.getLivro().setQuantPaginas(900); -> no objeto cliente2, eu pego a variável livro (não o objeto), que vai me exibir o objeto livro, assim, dentro do objeto livro, eu sou um set nas páginas e altero a quantidade delas para 900.
+- Veja, quando eu crio uma classe, eu também crio um tipo novo
+- Ou seja, além dos primitivos, se eu criei a classe livro, agora eu tbm tenho o tipo livro 
+- Dessa forma, eu agora posso colocar uma variável do tipo livro dentro de outra classe, então assim eu conseguirei associar essas duas classes perfeitamente 
+- Mas vale dar a devida atenção que, quando eu crio uma variável, eu preciso declarar ela dentro do meu construtor e se, por exemplo, já existir um objeto livro, eu coloco apenas a referência a esse tal objeto dentro do objeto cliente, por exemplo
+- Claro que eu posso criar um objeto livro no espaço destinado ao livro dentro do meu objeto de cliente, só que a referência vai ficar lá dentro do objeto cliente, não fora, ou seja, muito provavelmente será privada. 
+- Pra acessar o objeto livro e fazer alguma alteração, se ele estiver fora de outro objeto é simples, da forma comum, mas, caso ele esteja dentro de outro objeto cliente, eu preciso, para alterar o número de páginas, por exemplo:
+  cliente2.getLivro().setQuantPaginas(900); -> no objeto cliente2, eu pego a variável livro (não o objeto), que vai me exibir o objeto livro, assim, dentro do objeto livro, eu sou um set nas páginas e altero a quantidade delas para 900.
 
