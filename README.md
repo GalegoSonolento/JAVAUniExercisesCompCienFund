@@ -7,6 +7,7 @@ JAVA
 	Linguagem fortemente tipadas
     - Alguns cuidados são necessários
     - Ela exige mais do programador
+    
 	IDE
     - Integrated Development Environment
     - Tem tudo que precisa pra programar em uma linguagem específica
@@ -18,6 +19,8 @@ JAVA
     - JVM – local de execução do JAVA
     - Tem q instalar o JAVA e a IDE
     - Bluej vai ser usado até o final do grauB, mas ele obriga a fzr tudo na mão
+    
+    
 	Usando o JAVA
     - Pra criar uma classe tem que usar a função ‘class’
     - O código n fica solto
@@ -53,9 +56,13 @@ JAVA
     - boolean – T e F sã minúsculos
     - Comentário de linha = //
     - comentário de bloco = /* código comentado */
+    
+    
 	Variáveis 
     - É a mesma coisa basicamente
     - Mesmas regras do python
+    
+    
 	Declaração de variáveis
     - Antes de usar uma variável ela precisa ser declarada – dizer que existe e o tipo dela
     - double salario;
@@ -63,6 +70,8 @@ JAVA
     int n1;
     String nome
     boolean false
+    
+    
 	Expressões 
     - Mudança apenas nas lógicas
        - e lógico = &&
@@ -73,8 +82,12 @@ JAVA
 
 
 
+
+
 ORIENTAÇÃO A OBJETOS
 	Programas em java exigem a criação de classes e métodos
+
+
 	Problemas são feitos em módulos
     - Sistema é dividido em várias partes
     - Maneiras de separar todas as funções com suas similaridades
@@ -86,6 +99,8 @@ ORIENTAÇÃO A OBJETOS
     - As classes criam os objetos
     - Todos os objetos derivados de uma classe executam as ações que são por ela definidas
     - Instância = Um objeto criado a partir de uma classe
+    
+    
 	Montagem da classe
     -  A classe é definida com os atributos colocados no meio do código 
     - Visibilidade de um atributo (membros da classe)
@@ -99,21 +114,29 @@ ORIENTAÇÃO A OBJETOS
         - normalmente onde são colocados os atributos
         - Só pode ser acessada dentro de uma classe específica – apenas os objetos associados àquela classe podem acessar as características 
     - É possível criar quantos instâncias forem necessárias (objetos)
+    
+    
 	Método main
     - Método principal publlic static void main {}
     - Identifica o começo do programa
     - Todo programa em Java começa pelo método main
     - Quando existem vários mains eu preciso indicar se ele funciona
     - Várias classes podem ter main para testes
+    
+    
 	Toda variável criada com um tipo definido (ele tem que ser tipada) sem definição de valor tem um valor padrão 
     - String = null – uma classe não instanciada 
     - int = 0 – valor padrão 
     - boolean = false - padrão
     - double = 0.0 – valor padrão
     - char = 0
+    
+    
 	Criação de instância
 new NomeDaClasse();
     - new é um termo reservado da linguagem
+    
+    
 	Atributos 
     - Definem as características dos atributos 
     - São sempre permanentes, ficam na memória até o objeto morrer
@@ -121,6 +144,8 @@ new NomeDaClasse();
     - O escopo delas é toda a classe
     - Declaradas no corpo da classe
     - As variáveis tem o mesmo nome dos atributos 
+    
+    
 	Métodos 
     - O nome do criador do é método é construtor e ele constrói o objeto
     - O método construtor é definido implicitamente, sem parâmetros
@@ -135,35 +160,51 @@ new NomeDaClasse();
     - O método cria um objeto
     - Os parâmetros possuem variáveis locais, o escopo é apenas o método (somem depois da execução do método)
     - Os métodos sempre tem a mesma construção, o que muda são os parâmetros -> colocar mais de um tipo de criação de objetos na mesma classe é chamado de sobrecarga
+    
+    
 	Parâmetros de entrada
     - Pra colocar informações dentro do método que o próprio método ainda n tem
     - Trazer informações de fora
     - Informações que o método não conhece
+    
+    
 	Objetos
     - Toda vez que se dá new, o objeto está na memória
     - Ter parâmetros nos métodos permite que os objetos tenham conteúdos diferentes 
     - Toda vez que der new, cria-se um objeto novo, mesmo que tenham os mesmos valores 
+    
+    
 	Escopo de uma variável
     - Onde é possível acessá-la
     - O que os métodos podem acessar
     - Os atributos tem o escopo global da classe 
     - Os parâmetros dos métodos (construtores ou não) tem alcance limitado no metodo
+    
+    
 	Uso do this.
     - this. Na frente de qualquer membro ou método fala que deste objeto chama o atributo ou método da classe tal
     - O this. Faz uma referência a classe, nunca ao método ou objeto
     - O operador ‘.’ É uma ferramenta de acesso a algo
+    
+    
 	Métodos de acesso à atributos
     - Get e set
     - getters -> pega o valor do atributo
     - setter -> altera, setar o atributo
+    
+    
 	get
     - Não tem parâmetro de entrada
     - boa prática:
       - Sempre que o get for de um boolean -> em vez de usar get, usar is (por questões de gramática)
+      
+      
 	set
     - Métodos de retorno do set sempre vai ser void
     - Até dá pra ter retorno em um método void, ele só n pode ter valor, mas não faz sentido 
     - Sempre vai pedir o parâmetro, do mesmo jeito que muda o atributo no criador de objeto
+    
+    
 -> CLASSE TECLADO
   - A classe vai ser muito usada mas eu vou aprender a entender ela inteira conforme
 as aulas acontecem
