@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Peixe
+comment1.params=nome\ corPeixe\ raca
+comment1.target=Peixe(java.lang.String,\ Cor,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=
+comment3.target=Cor\ getCorPeixe()
+comment4.params=
+comment4.target=java.lang.String\ getRaca()
+comment5.params=nome
+comment5.target=void\ setNome(java.lang.String)
+comment6.params=corPeixe
+comment6.target=void\ setCorPeixe(Cor)
+comment7.params=raca
+comment7.target=void\ setRaca(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9
