@@ -197,5 +197,8 @@ diferentes
 
 
 ==-- WHILE --==
+
 -> Funciona igual um while de python, mas obviamente tem a sintaxe do if 
-- AS aspas no caso
+- As aspas no caso 
+- Também tem o esquema das chaves
+    - Se o sistema do while tiver apenas uma linha, não precisa delas, mas sabe né, se tiver mais linhas dentro (do chamamento) elas se fazem necessárias
