@@ -174,3 +174,8 @@ diferentes
 - Existe uma classe mãe de todas, a "object", nela existe um método chamado ToString -> representa o objeto na forma de String
 - O padrão é mostrar a posição de momória
 - Dá pra trocar o que o ToString mostra quando chamado
+
+
+==-- WHILE --==
+-> Funciona igual um while de python, mas obviamente tem a sintaxe do if 
+- AS aspas no caso
