@@ -163,3 +163,14 @@ new NomeDaClasse();
 - Métodos de retorno do set sempre vai ser void
 - Até dá pra ter retorno em um método void, ele só n pode ter valor, mas não faz sentido 
 - Sempre vai pedir o parâmetro, do mesmo jeito que muda o atributo no criador de objeto
+-> Classe Teclado
+- A classe vai ser muito usada mas eu vou aprender a entender ela inteira conforme
+as aulas acontecem
+-> Sobrecarga
+- Vários métodos que fazem a mesma coisa e são iguais, mas que recebem parâmetros 
+diferentes 
+-> ToString
+- Representação de forma String da posição de memória em que o objeto se encontra
+- Existe uma classe mãe de todas, a "object", nela existe um método chamado ToString -> representa o objeto na forma de String
+- O padrão é mostrar a posição de momória
+- Dá pra trocar o que o ToString mostra quando chamado
