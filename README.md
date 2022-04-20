@@ -183,18 +183,20 @@ new NomeDaClasse();
 - Métodos de retorno do set sempre vai ser void
 - Até dá pra ter retorno em um método void, ele só n pode ter valor, mas não faz sentido 
 - Sempre vai pedir o parâmetro, do mesmo jeito que muda o atributo no criador de objeto
+
 -> Classe Teclado
 - A classe vai ser muito usada mas eu vou aprender a entender ela inteira conforme
 as aulas acontecem
+
 -> Sobrecarga
 - Vários métodos que fazem a mesma coisa e são iguais, mas que recebem parâmetros 
 diferentes 
+
 -> ToString
 - Representação de forma String da posição de memória em que o objeto se encontra
 - Existe uma classe mãe de todas, a "object", nela existe um método chamado ToString -> representa o objeto na forma de String
 - O padrão é mostrar a posição de momória
 - Dá pra trocar o que o ToString mostra quando chamado
-
 
 ==-- WHILE --==
 
@@ -202,3 +204,32 @@ diferentes
 - As aspas no caso 
 - Também tem o esquema das chaves
     - Se o sistema do while tiver apenas uma linha, não precisa delas, mas sabe né, se tiver mais linhas dentro (do chamamento) elas se fazem necessárias
+- Usado para repetições que eu não sei quantas vezes repetirão
+- Sempre pode virar um for 
+
+==-- FOR --==
+
+- Um jeito muito parecido de fazer um while
+- A variável 
+- O for sempre vai usar uma variável que ainda não existe 
+- A sintaxe dele é diferente 
+- Usado quando se sabe quantas vezes o código vai precisar repetir 
+- Sempre pode transformar em while 
+- Normalmente se usa i dentro do for (convenção)
+- Existe uma preferência nos nomes das variáveis (i > j > k > ...)
+- for (variável ; condição ; atualização da variável)
+- NÃO FAÇA UM FOR COM TUDO VAZIO -> é só um while true, se fizer isso fica feio
+- Usar if ternário lá dentro tbm fica feio
+- Dá pra usar break
+- O for sempre precisa de, pelo menos, dois pontos e vírgula
+- O esquema das chaves é o mesmo
+- Esse for é muito mais um while do que no python que era uma leitura de lista
+- For só funciona com int 
+
+-> do{
+
+
+} while (cond)
+- Diferença -> o while teste, se na primeira vez for falso, enm executa
+- O do{}while sempre vai passar pelo menos uma vez pelo bloco de código e depois testa
+- Depois do 'do' sempre é necessário as chaves
