@@ -230,6 +230,6 @@ diferentes
 
 
 } while (cond)
-- Diferença -> o while teste, se na primeira vez for falso, enm executa
+- Diferença -> o while teste, se na primeira vez for falso, enm executa -> muito útil para menus
 - O do{}while sempre vai passar pelo menos uma vez pelo bloco de código e depois testa
 - Depois do 'do' sempre é necessário as chaves
