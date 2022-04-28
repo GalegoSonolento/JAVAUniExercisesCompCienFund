@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=ExercicioForProvaA
+comment1.params=x
+comment1.target=void\ imprimeNum(int)
+comment1.text=\ public\ static\ void\ main(String[]\ args){\r\n\ \ \ \ \ \ \ \ imprimeNum(Teclado.leInt("Digite\ um\ n\u00FAmero\ inteiro\:\ "));\r\n}
+numComments=2

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=PrincipalProvaA
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=double\ garantePreco()
+comment3.params=
+comment3.target=ArCondicionado\ criadorDeAr()
+comment3.text=Criei\ esse\ criador\ de\ ar\ a\ fim\ de\ atender\ os\ pedidos\ de\ garantir\ algumas\ coisas\ com\ as\ temperaturas\ \r\n\ \ \ \ \ \ \ Por\ mais\ que\ j\u00E1\ houvesse\ uma\ seguran\u00E7a\ quanto\ a\ isso,\ atendi\ ao\ exerc\u00EDcio.\r\nN\u00E3o\ sei\ se\ era\ exatamente\ essa\ a\ ideia,\ mas\ est\u00E1\ feito\ e\ funcional.
+numComments=4

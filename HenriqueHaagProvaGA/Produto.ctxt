@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Produto
+comment1.params=nome\ marca\ preco\ importado
+comment1.target=Produto(java.lang.String,\ java.lang.String,\ double,\ boolean)
+comment10.params=
+comment10.target=void\ imprimeInfo()
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=nome
+comment3.target=void\ setNome(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getMarca()
+comment5.params=marca
+comment5.target=void\ setMarca(java.lang.String)
+comment6.params=
+comment6.target=double\ getPreco()
+comment7.params=preco
+comment7.target=void\ setPreco(double)
+comment8.params=
+comment8.target=boolean\ isImportado()
+comment9.params=importado
+comment9.target=void\ setImportado(boolean)
+numComments=12

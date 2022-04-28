@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=ArCondicionado
+comment1.params=tempmin\ tempmax
+comment1.target=ArCondicionado(int,\ int)
+comment10.params=x
+comment10.target=boolean\ ajustaTemperaturaAtual(int)
+comment2.params=
+comment2.target=int\ getTempmin()
+comment3.params=tempmin
+comment3.target=void\ setTempmin(int)
+comment4.params=
+comment4.target=int\ getTempmax()
+comment5.params=tempmax
+comment5.target=void\ setTempmax(int)
+comment6.params=
+comment6.target=int\ getTempatual()
+comment7.params=
+comment7.target=boolean\ isQuentefrio()
+comment8.params=
+comment8.target=void\ impInformacoes()
+comment9.params=
+comment9.target=int\ garanteTempAtual()
+comment9.text=Esse\ m\u00E9todo\ aqui\ foi\ criado\ \u00FAnica\ e\ exclusivamente\ para\ atender\ a\ ordem\ de\ que,\ apesar\ do\ \r\n\ \ \ \ \ \ \ \ m\u00E9todo\ de\ setar\ a\ temperatura\ atual\ ter\ um\ tipo\ de\ seguran\u00E7a\ para\ manter\ o\ tempatual\ dentro\ \r\n\ \ \ \ \ \ \ \ do\ escopo\ de\ temperatura,\ eu\ preciso\ GARANTIR\ que\ a\ impress\u00E3o\ do\ usu\u00E1rio\ vai\ atender\ essas\r\ncaracter\u00EDsticas.
+numComments=11
