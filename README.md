@@ -233,3 +233,9 @@ diferentes
 - Diferença -> o while teste, se na primeira vez for falso, enm executa -> muito útil para menus
 - O do{}while sempre vai passar pelo menos uma vez pelo bloco de código e depois testa
 - Depois do 'do' sempre é necessário as chaves
+
+==-- UML --==
+- Convenção para a montagem de uma classe em qualquer tipo de linguagem. Realmente não importa qual
+- Segue a lógica de Nome -> atributos (visibilidade [+ público/- privado], nome: tipo) -> métodos (visibilidade, nome: retorno) -> é bom lembrar que se não houver especificação de retorno, subentende-se que é void.
+- Existe uma representação de flecha no diagrama para dizer que uma classe conhece a outra. 
+
