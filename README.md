@@ -273,3 +273,4 @@ diferentes
         ((Geladeira)e).gelar();
     - Essa é uma forma um pouco mais segura de evitar erros dentro do código
 - O polimorfismo permite que exista uma promoção ou uma mudança de subclasse - a referência pode alterar os objetos que aponta
+- O objeto pode ser "promovido" com o polimorfismo
