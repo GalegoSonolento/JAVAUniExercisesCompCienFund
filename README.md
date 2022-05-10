@@ -233,3 +233,26 @@ diferentes
 - Diferença -> o while teste, se na primeira vez for falso, enm executa -> muito útil para menus
 - O do{}while sempre vai passar pelo menos uma vez pelo bloco de código e depois testa
 - Depois do 'do' sempre é necessário as chaves
+
+==-- UML --==
+- Convenção para a montagem de uma classe em qualquer tipo de linguagem. Realmente não importa qual
+- Segue a lógica de Nome -> atributos (visibilidade [+ público/- privado], nome: tipo) -> métodos (visibilidade, nome: retorno) -> é bom lembrar que se não houver especificação de retorno, subentende-se que é void.
+- Existe uma representação de flecha no diagrama para dizer que uma classe conhece a outra. 
+
+==-- Herança --==
+- É a ideia de hierarquização das classes 
+- Uma classe mais genérica é a superclasse, mãe de outra classe mais especializada, a subclasse
+- É herança porque a subclasse basicamente herda todos os atributos e métodos da classe mãe
+- Todo objeto da subclasse é também um objeto da superclasse
+- Essas relações de super e sub sempre são feitas duas a duas, imediatamente superior e inferior
+- Subclasses apresentam características exclusivas
+- Nessa relação existe uma coisa importante de se dizer, métodos podem ser sobrescritos, ou seja, a subclasse pode ter um método com o mesmo nome da super, mas é interessante colocar a notação “@ override”, até para que o sistema aponte um potencial erro na hora de reescrever o método. Mas o override é exclusivo da classe filha e não é uma sobrecarga -> a sobrecarga acontece com métodos de mesmo nome, parâmetros diferentes mas na mesma classe
+- Para dizer que uma classe herda outra, durante a criação dela, precisamos usar o termo exclusivo “extends” -> Ex.: “public class Gerente extends Funcionario { }”
+- Para os construtuores:
+  - Dentro do método construtor, é necessário chamar o método construtor da superclasse, normalmente se usa o termo excluivo da linguagem “super”, como chamamento mesmo, e aí se coloca os parâmetros requisitos (à depender se o método é vazio ou não)
+  - Lembrando que, caso o construtor da subclasse não chame o super, por padrão, a subclasse chama o super sem parâmetros, que é igual a não colocar nada mesmo. 
+  - Atenção, porque superclasses que já tenham métodos construtores que não sejam vazios, não mais tem o método vazio por padrão. O sistema entrará em erro
+- Acessos:
+  - A subclasse pode acessar diretamente os itens públicos da superclasse 
+  - Itens privados demandam métodos públicos de acesso (igual era nos exercícios anteriores)
+  - Também existe a visibilidade “protected”, que permite a todas as classes da hierarquia acessar tal método ou atributo. É basicamente um public pero no mucho. 
