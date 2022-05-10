@@ -14,8 +14,8 @@ public class TesteExerciciosFor{
         testes.exercicio10();
         testes.exercicio11(Teclado.leInt("Digite um valor inteiro: "), Teclado.leInt("Digite outro: "));
         testes.exercicio12();
-        testes.exercicio13(Teclado.leInt("Digite um número para calcular o fatorial: "));
-        System.out.println(testes.exercicio14(Teclado.leInt("Digite um número pra identificá-lo como primo ou não: ")) ? "Primo" : "Não é primo");*/
-        testes.exercicio15(Teclado.leInt("Digite até qual número deseja ver os primos: "));
+        testes.exercicio13(Teclado.leInt("Digite um número para calcular o fatorial: "));*/
+        System.out.println(testes.exercicio14(Teclado.leInt("Digite um número pra identificá-lo como primo ou não: ")) ? "Primo" : "Não é primo");
+        // testes.exercicio15(Teclado.leInt("Digite até qual número deseja ver os primos: "));
     }
 }

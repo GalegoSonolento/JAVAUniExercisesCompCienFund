@@ -105,7 +105,7 @@ public class ExerciciosFor {
     	int soma = 0;
     	for (int j = 1; j<=x; j++){
     	    if (x % j == 0) cont ++;
-    	    if (cont == 2)
+    	    if (cont == 2);
         }
     	for (int i=0; i<=x; i++) {
     		System.out.println(i);
