@@ -1,0 +1,4 @@
+/* Crie uma classe Atleta, que possui um nome e uma idade. No construtor de Atleta, receba todos os parâmetros
+necessários para inicializar os atributos. Crie os métodos de acesso para os atributos e o método imprimeInfo, que não recebe
+parâmetros e imprime as informações do Atleta. */ 
+
