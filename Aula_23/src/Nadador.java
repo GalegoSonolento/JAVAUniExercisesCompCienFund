@@ -6,10 +6,18 @@ public class Nadador extends Atleta{
         this.categoria = categoria;
     }
 
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
     public void imprimeInfo(){
         System.out.println("Informações do nadador: "+"\n"+
-                "Nome: "+nome+"\n"+
-                "Idade: "+idade+"\n"+
+                "Nome: "+super.getNome()+"\n"+
+                "Idade: "+super.getIdade()+"\n"+
                 "Categoria: "+categoria);
     }
 }

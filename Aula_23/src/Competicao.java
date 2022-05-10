@@ -24,6 +24,6 @@ public class Competicao {
     }
 
     public void imprimeData(){
-        System.out.println(datacomp.imprimeData());
+        datacomp.imprimeData();
     }
 }

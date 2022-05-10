@@ -1,11 +1,11 @@
 public class Corredor extends Atleta{
     private double peso;
-    private Competicao competicao;
+    private Competicao competicaoAtleta;
 
-    public Corredor(String nome, int idade, double peso, Competicao competicao) {
+    public Corredor(String nome, int idade, double peso, Competicao competicaoAtleta) {
         super(nome, idade);
         this.peso = peso;
-        this.competicao = competicao;
+        this.competicaoAtleta = competicaoAtleta;
     }
 
     public double getPeso() {
@@ -16,26 +16,27 @@ public class Corredor extends Atleta{
         this.peso = peso;
     }
 
-    public Competicao getCompeticao() {
-        return competicao;
+    public Competicao getCompeticaoAtleta() {
+        return competicaoAtleta;
     }
 
-    public void setCompeticao(Competicao competicao) {
-        this.competicao = competicao;
+    public void setCompeticaoAtleta(Competicao competicaoAtleta) {
+        this.competicaoAtleta = competicaoAtleta;
     }
 
     public void imprimeCompeticao(){
         System.out.println("Informações da competição do atleta: "+"\n"+
-                "Nome: "+competicao.getNome()+"\n"+
-                "Data: "+competicao.getDatacomp());
+                "Nome: "+competicaoAtleta.getNome()+"\n"+
+                "Data: "+competicaoAtleta.getDatacomp());
     }
 
-    @override
+    @Override
     public void imprimeInfo(){
-        System.out.println("Informações do atleta: "+"\n"+
+        System.out.print("Informações do atleta: "+"\n"+
                         "Nome: "+super.getNome()+"\n"+
                         "Idade: "+super.getIdade()+"\n"+
                         "Peso: "+peso+"\n"+
-                        "Competição: "+competicao);
+                        "Competição: ");
+        imprimeCompeticao();
     }
 }
