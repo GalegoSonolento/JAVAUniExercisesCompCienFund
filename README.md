@@ -256,3 +256,20 @@ diferentes
   - A subclasse pode acessar diretamente os itens públicos da superclasse 
   - Itens privados demandam métodos públicos de acesso (igual era nos exercícios anteriores)
   - Também existe a visibilidade “protected”, que permite a todas as classes da hierarquia acessar tal método ou atributo. É basicamente um public pero no mucho. 
+
+==-- Polimorfismo --==
+- Polimorfismo vem de muitas formas
+- Nos diz que uma referência pra uma superclasse pode apontar para um objeto pode apontar para um objeto da subclasse -> upcasting
+- Uma referência da superclasse que aponta pra um objeto da subclasse -> uma referência com uma cara diferente no momento 
+- A referência apontando pra um objeto da subclasse apenas pode acessar os métodos e atributos, diretamente, da superclasse
+- Os métodos sobrescritos da subclasse podem ser chamados diretamente pelo referencial da superclasse 
+- Downcast
+  - ((TV)e).mudarCanal() -> Diz que a referência e da superclasse se comporta como a subclasse da TV e agora ela pode acessar o método mudar canal
+  - Mas o sistema compila usar ((Geladeira)e).gelar(); - que apesar de compilar explode o código
+  - Uma forma de driblar esse problema é a linha:
+    - if (e instanceof TV)
+        ((TV)e).mudarCanal();
+    - else if (e intanceof Geladeira)
+        ((Geladeira)e).gelar();
+    - Essa é uma forma um pouco mais segura de evitar erros dentro do código
+- O polimorfismo permite que exista uma promoção ou uma mudança de subclasse - a referência pode alterar os objetos que aponta
