@@ -31,7 +31,7 @@ public class Data {
         this.ano = ano;
     }
 
-    public void imprimeData(){
-        System.out.println(dia+"/"+mes+"/"+ano);
+    public String imprimeData(){
+        return dia+"/"+mes+"/"+ano;
     }
 }

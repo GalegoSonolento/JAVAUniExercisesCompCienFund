@@ -23,7 +23,15 @@ public class Competicao {
         this.datacomp = datacomp;
     }
 
-    public void imprimeData(){
-        datacomp.imprimeData();
+    public String imprimeData(){
+        return datacomp.imprimeData();
+    }
+
+    @Override
+    public String toString() {
+        return "Competicao{" +
+                "nome='" + nome + '\'' +
+                ", data da competição =" + datacomp.imprimeData() +
+                '}';
     }
 }

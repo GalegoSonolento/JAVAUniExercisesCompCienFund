@@ -27,7 +27,7 @@ public class Corredor extends Atleta{
     public void imprimeCompeticao(){
         System.out.println("Informações da competição do atleta: "+"\n"+
                 "Nome: "+competicaoAtleta.getNome()+"\n"+
-                "Data: "+competicaoAtleta.getDatacomp());
+                "Data: "+competicaoAtleta.imprimeData());
     }
 
     @Override
