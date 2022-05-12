@@ -274,3 +274,43 @@ diferentes
     - Essa é uma forma um pouco mais segura de evitar erros dentro do código
 - O polimorfismo permite que exista uma promoção ou uma mudança de subclasse - a referência pode alterar os objetos que aponta
 - O objeto pode ser "promovido" com o polimorfismo
+
+==-- Arrays --==
+- Até agora uma variável armazenava apenas um valor de mamória
+- São objetos que permitem armazenar várias variáveis do mesmo tipo ao mesmo tempo
+- Ainda existem posições de memória
+- Dá pra imaginar como uma linha de blocos (tipo o mine memo)
+  - Se der pra identificar como uma lista tá valendo 
+- Todos os itens dos arreys tem o mesmo tipo
+- Arrays são armazenados na memória de forma contígua
+  - Elas estão uma após a outra dentro da memória (as posições não ficam espelhadas, são todas juntas)
+- Cada item do array é chamado de elemnto e sempre ´´e associado a um número qu identifica a posição, sendo que a primeira posição é sempre zero
+- O tamanho do array é o da quantidade de elementos, mas como a primeira posição é zero, a última posição válida do array é o tamanho -1
+- A principal diferença de um array pra uma lista é que o array pode ter buracos dentro dele, por exemplo, um array pode ter 0, 1, 2, 78, 20000 e ainda compila
+- Declarando Arrays:
+  - Usa-se os colchetes
+  - Ela ainda precisa ser declarada 
+    - int[] valorTotal (tudo que for declarado nessa linha vai ser um array de inteiros); ou int valorTotal[] (nessa linha apenas valorTotal será um array de inteiros , os outros na mesma linha serão apenas inteiros);
+  - É possível declarar arreys com tipos novos criados a partir de classes novas
+  - É necessário dizer quantas posições de memória o array vai armazenar, caso não seja especificado, ele é null (lembre que um arrey é um objeto)
+  - É preciso reservar um bloco de memória para o armazenamento das arrays
+  - Instanciamento de array
+    - valorTotal = new int[10] -> o array pode armazenar 10 posições de memória - também precisa do tipo durante a instanciação
+    - Não precisa instanciar assim que declara
+    - de usar valorTotal.length, o java vai retornar o tamanho do array
+- Inicializando arrays
+  - Arrays são estáticos, uma vez que os arrays foram instanciados (até dá pra aumentar, mas não vale muito - normalmente apenas se muda a referência) -> localização estática de memória
+  - Dá pra pular x posições de memória com uma conta simples
+  - Dá pra fazer um laço que passa por todas as posições de memória para ler todo o array
+  - 1° posição válida do array = x[0]
+  - Última posição válida = x[x.length-1]
+  - O args dentro do main é uma array -> quando se executa o programa aquilo serve de parâmetro externo, mas tem que ser usado dentro do programa
+  - Um array com valores fixos tem a seguinte sintaxe => int[] valorTotal = {23, 234, 90, 1996, 2003}
+- Inicializando array de objetos
+  - cada item do array vai ter um objeto criado dentro dele -> todas as posições tem os valores padrão para os tipos primitivos
+- Dá pra somar, imprimir e fazer qualquer tipo de uso com os itens dentro de cada array
+- Cada posição de memória do array é uma variável normal
+- Nunca usar lista ou fila como nome de array
+- Um array até pode ser definido como um conjunto de elementos, não necessariamente com os elementos prontos
+- Array é uma forma de armazer informações, uma lista é uma forma de administras as informações
+- Um array ´r comparável a uma rifa
