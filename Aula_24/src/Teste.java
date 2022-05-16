@@ -98,7 +98,34 @@ public class Teste {
 //        }
 //        System.out.println(cont);
 
-        //Exercício 5
+//        //Exercício 5
+//        int[] a = {1, 2, 5, 5, 5, 7};
+//        System.out.println(exercicio5(a, 5));
+
+//        //Exericio 6
+//        int[] a = {-2, 2, -5, 6};
+//        exercicio6(a);
+
+        //Exercício 7
+        int[] a = {1,3,7,9,4,9,3};
+    }
+
+//    public static int exercicio5(int[] a, int x){
+//        int repete = 0;
+//        for (int i=0; i<a.length; i++) if (a[i] == x) repete++;
+//        return repete;
+//    }
+//    public static boolean[] exercicio6(int[] a){
+//        boolean[] b;
+//        b = new boolean[a.length];
+//        for (int i=0; i<a.length; i++){
+//            if (a[i] <= 0) b[i] = false;
+//            else if (a[i] > 0) b[i] = true;
+//        }
+//        for (int j=0; j< b.length; j++) System.out.println(b[j]);
+//        return b;
+//    }
+    public static int exercicio7(int[] a){
 
     }
 }
