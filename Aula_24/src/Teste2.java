@@ -2,6 +2,10 @@ public class Teste2 {
     public static void main(String[] args){
         //mediaNotas();
         //exercicio2();
+        int[] teste = {1,2,5,4};
+        System.out.println("A soma dos valores da array é: "+exercicio3(teste));
+        String[] nome = {"João", "Roberta", "Valentino"};
+        System.out.println(procuraNome(nome, "Alemão"));
     }
 
     public static void mediaNotas(){
@@ -24,8 +28,26 @@ public class Teste2 {
             else System.out.print(nomes[j]+".");
     }
 
-//    public static int exercicio3(int[] array){
-//        if (array == null) return -999;
-//
-//    }
+    public static int exercicio3(int[] array){
+        int soma = 0;
+        if (array == null) return -999;
+        else
+            for (int i=0; i<array.length; i++)
+                if (array[i] != 0)
+                    soma += array[i];
+        return soma;
+    }
+
+    public static boolean procuraNome(String[] array, String nome){
+        boolean resp = false;
+        if (array == null) return false;
+        else
+            for (int i=0; i< array.length; i++)
+                if (array[i] != null)
+                    if (array[i].equalsIgnoreCase(nome)){
+                        resp = true;
+                        break;
+                    }
+        return resp;
+    }
 }
