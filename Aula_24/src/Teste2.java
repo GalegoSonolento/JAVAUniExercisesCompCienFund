@@ -3,9 +3,13 @@ public class Teste2 {
         //mediaNotas();
         //exercicio2();
         int[] teste = {1,2,5,4};
-        System.out.println("A soma dos valores da array é: "+exercicio3(teste));
+        int[] teste2 = {3,3,2,1};
+        //System.out.println("A soma dos valores da array é: "+exercicio3(teste));
         String[] nome = {"João", "Roberta", "Valentino"};
-        System.out.println(procuraNome(nome, "Alemão"));
+        //System.out.println(procuraNome(nome, "Alemão"));
+        //exercicio5(teste, teste2);
+        double[] teste3 = {2, 3, 2.7, 9.23, 10.12};
+        //exercicio6(teste3);
     }
 
     public static void mediaNotas(){
@@ -50,4 +54,37 @@ public class Teste2 {
                     }
         return resp;
     }
+
+    public static int[] exercicio5(int[] a, int[] b){
+        int[] resp;
+        if (a == null && b == null) return null;
+        else if (a.length != b.length) return null;
+        else {
+            resp = new int[a.length];
+            for (int i=0; i<a.length; i++)
+                resp[i] = a[i] + b[i];
+        }
+        return resp;
+    }
+
+    public static void exercicio6(double[] a){
+        double maior = 0, menor = 0, soma = 0, media = 0;
+        if (a != null) {
+            for (int i = 0; i < a.length; i++)
+                if (a[i] != 0.0){
+                    if (i == 0) maior = menor = a[i];
+                    else
+                        if (a[i] > maior) maior = a[i];
+                        else if (a[i] < menor) menor = a[i];
+                    soma += a[i];
+                }
+            media = soma / a.length;
+            System.out.println("As informações obtidas na array são: "+"\n"+
+            "Maior valor: "+maior+"\n"+
+            "Menor valor: "+menor+"\n"+
+            "Média dos valores: "+media);
+        }
+    }
+
+    public static
 }
