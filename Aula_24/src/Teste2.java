@@ -1,15 +1,19 @@
+import java.util.Arrays;
+
 public class Teste2 {
     public static void main(String[] args){
-        //mediaNotas();
-        //exercicio2();
+//        Exercício 8
+         mediaNotas();
+        exercicio2();
         int[] teste = {1,2,5,4};
         int[] teste2 = {3,3,2,1};
-        //System.out.println("A soma dos valores da array é: "+exercicio3(teste));
+        System.out.println("A soma dos valores da array é: "+exercicio3(teste));
         String[] nome = {"João", "Roberta", "Valentino"};
-        //System.out.println(procuraNome(nome, "Alemão"));
-        //exercicio5(teste, teste2);
+        System.out.println(procuraNome(nome, "Alemão"));
+        System.out.println(Arrays.toString(exercicio5(teste, teste2)));
         double[] teste3 = {2, 3, 2.7, 9.23, 10.12};
-        //exercicio6(teste3);
+        exercicio6(teste3);
+        exercicio7();
     }
 
     public static void mediaNotas(){
@@ -36,9 +40,9 @@ public class Teste2 {
         int soma = 0;
         if (array == null) return -999;
         else
-            for (int i=0; i<array.length; i++)
-                if (array[i] != 0)
-                    soma += array[i];
+            for (int j : array)
+                if (j != 0)
+                    soma += j;
         return soma;
     }
 
@@ -46,9 +50,9 @@ public class Teste2 {
         boolean resp = false;
         if (array == null) return false;
         else
-            for (int i=0; i< array.length; i++)
-                if (array[i] != null)
-                    if (array[i].equalsIgnoreCase(nome)){
+            for (String s : array)
+                if (s != null)
+                    if (s.equalsIgnoreCase(nome)) {
                         resp = true;
                         break;
                     }
@@ -58,17 +62,20 @@ public class Teste2 {
     public static int[] exercicio5(int[] a, int[] b){
         int[] resp;
         if (a == null && b == null) return null;
-        else if (a.length != b.length) return null;
         else {
-            resp = new int[a.length];
-            for (int i=0; i<a.length; i++)
-                resp[i] = a[i] + b[i];
+            assert a != null;
+            if (a.length != b.length) return null;
+            else {
+                resp = new int[a.length];
+                for (int i=0; i<a.length; i++)
+                    resp[i] = a[i] + b[i];
+            }
         }
         return resp;
     }
 
     public static void exercicio6(double[] a){
-        double maior = 0, menor = 0, soma = 0, media = 0;
+        double maior = 0, menor = 0, soma = 0, media;
         if (a != null) {
             for (int i = 0; i < a.length; i++)
                 if (a[i] != 0.0){
@@ -86,5 +93,12 @@ public class Teste2 {
         }
     }
 
-    public static
+    public static void exercicio7(){
+        int tam = (int) ((Math.random()*100)+1);
+        int[] a = new int[tam];
+        for (int i=0; i<a.length; i++) a[i] = (int) ((Math.random()*1000)+1);
+        for (int j=0; j<a.length; j++)
+            if (j == a.length-1)System.out.print(a[j]+".");
+            else System.out.print(a[j]+" - ");
+    }
 }
