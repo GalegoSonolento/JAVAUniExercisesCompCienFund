@@ -5,9 +5,9 @@ public class MEC {
             for (int i = 0; i < array.length; i++)
                 if (array[i] != null)
                     if (array[i] instanceof Publica)
-                        System.out.println("[Pública]"+toString());
+                        System.out.println("[Pública]"+((Publica)array[i]).toString());
                     else
-                        System.out.println("[Privada]"+toString());
+                        System.out.println("[Privada]"+((Particular)array[i]).toString());
         }
     }
 
@@ -32,5 +32,15 @@ public class MEC {
                 System.out.println(((Particular) array[posMaisCara]).toString());
             }
         }
+    }
+
+    public void universidadesDoSul(Universidade[] array){
+        if (array == null) System.out.println("Não existem universidades para análise.");
+        else
+            for (int i=0; i<array.length; i++)
+                if (array[i] != null)
+                    if (array[i] instanceof Publica)
+                        if (((Publica) array[i]).getEstado().equalsIgnoreCase("RS") || ((Publica) array[i]).getEstado().equalsIgnoreCase("SC") || ((Publica) array[i]).getEstado().equalsIgnoreCase("PR"))
+                            System.out.println(array[i].toString());
     }
 }
