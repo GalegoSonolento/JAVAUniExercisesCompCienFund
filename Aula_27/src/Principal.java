@@ -27,7 +27,22 @@ public class Principal {
         System.out.println(" ");
 
         System.out.println("=-=-=-=-=- Informações das mulheres da festa -=-=-=-=-=");
-        System.out.println(festa.procuraMulheres());
+        Pessoa[] mulheres = festa.procuraMulheres();
+        if (mulheres == null) System.out.println("Não existem mulheres na festa");
+        else
+            for (int i=0; i< mulheres.length; i++)
+                System.out.println(mulheres[i]);
         System.out.println("-=-=-=-=-=-=-=-=-=-=");
+        System.out.println(" ");
+
+        System.out.println("========== Times dos homens da festa ==========");
+        festa.imprimeTimeHomens();
+        System.out.println("-=-=-=-=-=-=-=-=-=-=");
+        System.out.println(" ");
+
+        System.out.println("========== Pares perfeitos da festa ==========");
+        festa.achaParPerfeito();
+        System.out.println("-=-=-=-=-=-=-=-=-=-=");
+        System.out.println(" ");
     }
 }

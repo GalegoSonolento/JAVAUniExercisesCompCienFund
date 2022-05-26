@@ -40,9 +40,10 @@ public class Festa {
         }
         if (cont == 0) return null;
         apenasMulheres = new Pessoa[cont];
+        int pos = 0;
         for (int i = 0; i < festa.length; i++)
             if (festa[i] instanceof Mulher)
-                for (int j = 0; j < apenasMulheres.length; j++) if (apenasMulheres[j] == null) apenasMulheres[j] = festa[i];
+                apenasMulheres[pos++] = festa[i];
         return apenasMulheres;
     }
 
