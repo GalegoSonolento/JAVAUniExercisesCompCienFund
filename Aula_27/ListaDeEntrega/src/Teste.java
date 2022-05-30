@@ -26,9 +26,8 @@ public class Teste {
         System.out.println(" ");
         System.out.println("=====Exercício 3 =====");
         int[] retorno2 = ex.exercicio3(teste);
-        for (int i=0;i< retorno2.length; i++){
+        for (int i=0;i< retorno2.length; i++)
             System.out.println(retorno2[i]);
-        }
 
         System.out.println(" ");
         System.out.println("=====Exercício 4 =====");
@@ -38,23 +37,20 @@ public class Teste {
         System.out.println(" ");
         System.out.println("=====Exercício 5 =====");
         int[] resp = ex.exercicio5(booleans);
-        for (int i=0; i<resp.length; i++){
+        for (int i=0; i<resp.length; i++)
             System.out.println(resp[i]);
-        }
 
         System.out.println(" ");
         System.out.println("=====Exercício 6 =====");
         int[] retorno4 = ex.exercicio6(teste, teste2);
-        for (int i=0; i<retorno4.length; i++){
+        for (int i=0; i<retorno4.length; i++)
             System.out.println(retorno4[i]);
-        }
 
         System.out.println(" ");
         System.out.println("=====Exercício 7 =====");
         int[] retorno5 = ex.exercicio7(teste, teste3);
-        for (int i=0; i<retorno5.length; i++){
+        for (int i=0; i<retorno5.length; i++)
             System.out.println(retorno5[i]);
-        }
 
         System.out.println(" ");
         System.out.println("=====Exercício 8 =====");
