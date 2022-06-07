@@ -232,16 +232,30 @@ public class Exercicios {
     }
 
     public String[] exercicio20(String[] s, int x){
-        for (int i=0; i<s.length; i++)
-            if (i == x)
-                s[i] = null;
-        for (int i=0; i<s.length; i++)
-            if (i < s.length-1)
-                if (s[i] == null)
-                    if (s[i+1] != null){
-                        s[i] = s[i+1];
-                        s[i+1] = null;
-                    }
+        if (s == null) return null;
+        if (s.length <= x){
+            System.out.println("Não existe esse elemento na array de Strings.");
+            return null;
+        }
+        s[x] = null;
+        for (int i=x; i<s.length-1; i++)
+            s[i] = s[++x];
+        s[s.length-1] = null;
+//        for (int i=0; i<s.length; i++){
+//            if (i == x+1){
+//                if ((x+1) == s.length-1){
+//                    s[x] = s[i];
+//                    x = i;
+//                }
+//            }
+//        }
+//        for (int i=0; i<s.length; i++)
+//            if (i < s.length-1)
+//                if (s[i] == null)
+//                    if (s[i+1] != null){
+//                        s[i] = s[i+1];
+//                        s[i+1] = null;
+//                    }
         return s;
     }
 
