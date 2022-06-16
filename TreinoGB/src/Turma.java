@@ -35,11 +35,14 @@ public class Turma {
 
     public double mediaNotasTurma(){
         double soma = 0;
-        double quantNotas = alunos.length;
+        double quantNotas = 0;
         if (alunos == null) return -1;
         for (int i=0; i< alunos.length; i++)
-            if (alunos[i] != null)
+            if (alunos[i] != null){
                 soma += alunos[i].calculaNotaFinal();
+                quantNotas ++;
+            }
+        if (quantNotas == 0) return -1;
         double media = soma / quantNotas;
         return media;
     }
@@ -48,3 +51,4 @@ public class Turma {
         return alunos;
     }
 }
+
